@@ -51,8 +51,7 @@ public class Application2 {
 
             // TODO: 결과를 출력하세요 (예: "1 스트라이크 1 볼")
 
-            System.out.println("strike = " + strike);
-            System.out.println("ball = " + ball);
+            System.out.println("strike = " + strike + " " + "ball = " + ball);
 
             // TODO: 3 스트라이크인 경우 isCorrect를 true로 변경하세요
 
