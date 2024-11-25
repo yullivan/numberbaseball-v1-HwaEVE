@@ -42,8 +42,9 @@ public class Application {
             // TODO: 3 스트라이크인 경우 게임을 끝내세요
             if (strike == 3) {
                 isCorrect = true;
+                System.out.println("축하합니다! 정답을 맞추셨습니다.");
             }
         }
-        System.out.println("축하합니다! 정답을 맞추셨습니다.");
+        scanner.close();
     }
 }
