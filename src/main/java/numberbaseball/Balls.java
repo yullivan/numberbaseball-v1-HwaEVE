@@ -6,18 +6,24 @@ public class Balls {
     Ball ball2;
     Ball ball3;
 
+    public Balls(Ball ball1, Ball ball3, Ball ball2) {
+        this.ball1 = ball1;
+        this.ball3 = ball3;
+        this.ball2 = ball2;
+    }
+
     String matchStatus(Ball other) {
-        if (ball1.number == other.number && ball1.position == other.position) {
+        if (ball1.getNumber() == other.getNumber() && ball1.getPosition() == other.getPosition()) {
             return "STRIKE";
-        } else if (ball1.number == other.number) {
+        } else if (ball1.getNumber() == other.getNumber()) {
             return "BALL";
-        } else if (ball2.number == other.number && ball2.position == other.position) {
+        } else if (ball2.getNumber() == other.getNumber() && ball2.getPosition() == other.getPosition()) {
             return "STRIKE";
-        } else if (ball2.number == other.number) {
+        } else if (ball2.getNumber() == other.getNumber()) {
             return "BALL";
-        } else if (ball3.number == other.number && ball3.position == other.position) {
+        } else if (ball3.getNumber() == other.getNumber() && ball3.getPosition() == other.getPosition()) {
             return "STRIKE";
-        } else if (ball3.number == other.number) {
+        } else if (ball3.getNumber() == other.getNumber()) {
             return "BALL";
         }
         return "NOTHING";
